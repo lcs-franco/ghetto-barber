@@ -1,10 +1,10 @@
 import { format } from 'date-fns';
-import { Header } from '../_components/header';
 import { ptBR } from 'date-fns/locale';
-import { Search } from './_components/search';
-import { BookingItem } from '../_components/bookingItem';
 import { db } from '../_lib/prisma';
-import { BarbershopItem } from './_components/barbershopItem';
+import Header from '../_components/header';
+import Search from './_components/search';
+import BookingItem from '../_components/bookingItem';
+import BarbershopItem from './_components/barbershopItem';
 
 export default async function Home() {
   //call prisma and get barbershops
