@@ -32,7 +32,7 @@ model Service {
   barbershop   Barbershop @relation(fields: [barbershopId], references: [id])
   barbershopId String     @map("barbershop_id")
   description  String
-  imageUrl     String?    @map("image_url")
+  imageUrl     String     @map("image_url")
   bookings     Booking[]
 }
 
