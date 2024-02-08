@@ -48,7 +48,7 @@ export default function SideMenu() {
           </div>
           <Button
             variant="secondary"
-            className="w-full justify-start font-bold"
+            className="w-full justify-start font-bold rounded-lg"
             onClick={handleLoginClick}
           >
             <LogInIcon className="mr-2" size={18} />
@@ -58,7 +58,7 @@ export default function SideMenu() {
       )}
 
       <div className="flex flex-col gap-3 px-5">
-        <Button variant="outline" className="justify-start" asChild>
+        <Button variant="outline" className="justify-start rounded-lg" asChild>
           <Link href="/">
             <HomeIcon size={18} className="mr-2" />
             Início
@@ -66,7 +66,11 @@ export default function SideMenu() {
         </Button>
 
         {data?.user && (
-          <Button variant="outline" className="justify-start" asChild>
+          <Button
+            variant="outline"
+            className="justify-start rounded-lg"
+            asChild
+          >
             <Link href="/bookings">
               <CalendarIcon size={18} className="mr-2" />
               Agendamentos
