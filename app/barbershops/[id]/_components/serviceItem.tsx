@@ -94,6 +94,7 @@ export default function ServiceItem({
       setSheetIsOpen(false);
       setHour(undefined);
       setDate(undefined);
+
       toast('Reserva realizada com sucesso!', {
         description: format(newDate, "'Para' dd 'de' MMMM 'às' HH':'mm'.'", {
           locale: ptBR,
